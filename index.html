@@ -3,171 +3,153 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-<title>FREE Masterclass – Earn ₹1,00,000/Month Using Your Smartphone</title>
-<meta name="description" content="Grow Your Income From 0 To 1,00,000 Per Month In No Time Using 3 Proven Methods"/>
-<meta property="og:title" content="Freedom Business Masterclass"/>
-<meta property="og:description" content="Grow Your Income From 0 To 1,00,000 Per Month In No Time Using 3 Proven Methods"/>
-<meta name="theme-color" content="#22ffff"/>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<title>Earn ₹1,00,000/Month Using Your Smartphone</title>
+<meta name="description" content="Grow Your Income From 0 To ₹1,00,000 Per Month Using 3 Proven Methods"/>
+<meta property="og:title" content="The Freedom Blueprint"/>
+<meta property="og:description" content="Grow Your Income From 0 To ₹1,00,000 Per Month Using 3 Proven Methods"/>
+<meta name="theme-color" content="#bef264"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','PIXEL_ID');fbq('track','PageView');</script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"/></noscript>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{font-family:'Poppins',sans-serif;background:#0a0a0a;color:#fff;overflow-x:hidden;line-height:1.65;}
+html{scroll-behavior:smooth;overflow-x:clip;}
+body{font-family:'Sora',sans-serif;background:#0b1020;color:#f0f3f8;overflow-x:clip;line-height:1.65;}
 img{display:block;max-width:100%;}
+::-webkit-scrollbar{width:3px;}
+::-webkit-scrollbar-thumb{background:#bef264;}
 
-/* COLORS */
 :root{
-  --cyan:#f59e0b;
-  --cyan2:#d97706;
-  --yellow:#ff9500;
-  --orange:#22c55e;
-  --red:#ff2d78;
-  --bg:#0a0a0a;
-  --bg2:#111;
-  --bg3:#1a1a1a;
+  --lime:#bef264;
+  --lime2:#a3e635;
+  --navy:#0b1020;
+  --navy2:#121935;
+  --navy3:#1a2347;
+  --muted:rgba(240,243,248,.55);
 }
+
+/* MODAL */
+.ov{display:none;position:fixed;inset:0;background:rgba(5,8,18,.9);z-index:9999;align-items:flex-end;justify-content:center;}
+.ov.on{display:flex;}
+.sheet{background:var(--navy2);border:1px solid rgba(190,242,100,.15);border-radius:24px 24px 0 0;padding:24px 20px 36px;width:100%;max-width:480px;position:relative;}
+.handle{width:38px;height:4px;background:rgba(255,255,255,.15);border-radius:2px;margin:0 auto 16px;}
+.scls{position:absolute;top:14px;right:18px;background:none;border:none;color:rgba(255,255,255,.35);font-size:20px;cursor:pointer;}
 
 /* HERO */
 #hero{
-  background:linear-gradient(180deg,#000 0%,#0d0d0d 100%);
-  padding:28px 20px 32px;
-  text-align:center;
-  border-bottom:2px solid var(--cyan);
+  background:linear-gradient(170deg,#0b1020 0%,#141b3a 60%,#0b1020 100%);
+  padding:30px 20px 28px;text-align:center;
+  border-bottom:1px solid rgba(190,242,100,.1);
   position:relative;overflow:hidden;
 }
-#hero::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--yellow),var(--cyan));}
+#hero::before{content:'';position:absolute;width:480px;height:480px;background:radial-gradient(circle,rgba(190,242,100,.1) 0%,transparent 65%);top:-100px;left:50%;transform:translateX(-50%);pointer-events:none;}
 
-.free-badge{
-  display:inline-block;
-  background:linear-gradient(135deg,var(--cyan),var(--cyan2));
-  color:#000;
-  font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
-  padding:8px 20px;border-radius:100px;
-  margin-bottom:18px;
-  box-shadow:0 0 20px rgba(245,158,11,.3);
-}
-.hero-h1{font-size:clamp(1.5rem,5vw,2.6rem);font-weight:900;color:#fff;line-height:1.15;margin-bottom:12px;text-transform:uppercase;letter-spacing:-.5px;}
-.hero-h1 .cyan{color:var(--cyan);text-shadow:0 0 20px rgba(245,158,11,.4);}
-.hero-h1 .yellow{color:#f59e0b;}
-.hero-h2{font-size:clamp(1rem,3vw,1.3rem);font-weight:600;color:rgba(255,255,255,.7);margin-bottom:8px;line-height:1.5;}
-.hero-h3{font-size:clamp(.88rem,2.5vw,1rem);color:rgba(255,255,255,.55);margin-bottom:24px;line-height:1.6;}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(190,242,100,.1);border:1px solid rgba(190,242,100,.3);color:var(--lime);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:7px 16px;border-radius:100px;margin-bottom:18px;}
+.dot{width:6px;height:6px;background:var(--lime);border-radius:50%;animation:blink 1.7s infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+
+.hero-h{font-size:clamp(1.7rem,7vw,2.7rem);font-weight:800;color:#fff;line-height:1.15;margin-bottom:8px;letter-spacing:-.5px;}
+.hero-h .lime{color:var(--lime);}
+.hero-sub{font-size:.92rem;color:rgba(255,255,255,.6);margin-bottom:6px;font-weight:500;}
+.hero-note{font-size:.82rem;color:rgba(255,255,255,.4);margin-bottom:20px;}
+
+.video-frame{width:100%;max-width:460px;margin:0 auto 22px;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid rgba(190,242,100,.15);background:#000;}
+.video-frame iframe{width:100%;height:100%;border:none;}
 
 @keyframes shake{0%,100%{transform:translateX(0)}15%{transform:translateX(-5px)}30%{transform:translateX(5px)}45%{transform:translateX(-3px)}60%{transform:translateX(3px)}75%{transform:translateX(-2px)}90%{transform:translateX(2px)}}
-@keyframes glow{0%,100%{box-shadow:0 0 20px rgba(245,158,11,.4)}50%{box-shadow:0 0 40px rgba(245,158,11,.7)}}
 
-.cta-btn{
-  display:flex;align-items:center;justify-content:center;gap:10px;
-  background:linear-gradient(135deg,var(--cyan),var(--cyan2));
-  color:#000;
-  padding:16px 24px;border-radius:10px;border:none;
-  font-family:'Poppins',sans-serif;font-size:1rem;font-weight:800;
-  cursor:pointer;width:100%;max-width:420px;margin:0 auto 20px;
-  text-decoration:none;display:flex;
-  animation:shake 2.5s ease-in-out infinite, glow 2s ease-in-out infinite;
-  letter-spacing:.02em;
-}
-.cta-btn:hover{background:var(--cyan);}
-.cta-btn.yellow{background:linear-gradient(135deg,var(--yellow),#ffb300);animation:shake 2.5s ease-in-out infinite;}
-.cta-btn.red{background:linear-gradient(135deg,#ff3b3b,#cc0000);color:#fff;animation:shake 2.5s ease-in-out infinite;}
+.wa-btn{display:flex;align-items:center;justify-content:center;gap:10px;background:#25D366;color:#fff;padding:15px 24px;border-radius:14px;border:none;font-family:'Sora',sans-serif;font-size:.95rem;font-weight:700;cursor:pointer;width:100%;max-width:400px;margin:0 auto 20px;box-shadow:0 8px 28px rgba(37,211,102,.3);animation:shake 2.5s ease-in-out infinite;}
+.wa-btn:hover{background:#1fbd5a;}
 
-.hero-imgs{display:flex;flex-direction:column;gap:10px;margin:10px 0 20px;}
-.hero-imgs img{width:100%;border-radius:12px;border:1px solid rgba(245,158,11,.15);}
-.hero-imgs-ph{width:100%;height:180px;background:#1a1a1a;border-radius:12px;border:1px solid rgba(245,158,11,.15);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);font-size:.85rem;}
+.proof-row{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.proof-row::-webkit-scrollbar{display:none;}
+.proof-item{flex:0 0 130px;border-radius:12px;overflow:hidden;border:1px solid rgba(190,242,100,.15);}
+.proof-item img{width:100%;display:block;}
+.proof-ph{flex:0 0 130px;height:170px;background:rgba(255,255,255,.04);border-radius:12px;border:1px solid rgba(190,242,100,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.25);font-size:.7rem;text-align:center;padding:8px;}
 
 /* SECTION */
-.sec{padding:32px 20px;border-bottom:1px solid #222;}
-.sec-dark{background:#000;}
-.sec-center{text-align:center;}
+.sec{padding:36px 20px;border-bottom:1px solid rgba(190,242,100,.08);}
+.sec-dark{background:var(--navy2);}
+.tag{font-size:.62rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--lime);margin-bottom:10px;}
+.sec-h{font-size:clamp(1.4rem,5vw,2rem);font-weight:800;color:#fff;margin-bottom:18px;line-height:1.2;}
+.sec-h .lime{color:var(--lime);}
 
-.sec-h{font-size:clamp(1.3rem,4vw,1.9rem);font-weight:800;color:#fff;margin-bottom:16px;line-height:1.2;text-transform:uppercase;letter-spacing:-.3px;}
-.sec-h .cyan{color:var(--cyan);}
-.sec-h .yellow{color:var(--yellow);}
-
-/* BENEFITS */
-.benefits-list{display:flex;flex-direction:column;gap:14px;margin-top:16px;}
-.benefit-item{display:flex;align-items:flex-start;gap:14px;background:#111;border:1px solid #222;border-left:3px solid var(--cyan);border-radius:0 12px 12px 0;padding:14px 16px;}
-.benefit-icon{width:44px;height:44px;min-width:44px;border-radius:10px;overflow:hidden;background:#1a1a1a;display:flex;align-items:center;justify-content:center;font-size:1.4rem;}
-.benefit-text{font-size:.88rem;color:rgba(255,255,255,.8);line-height:1.6;font-weight:500;}
-.benefit-text strong{color:#fff;display:block;margin-bottom:2px;}
+/* BENEFITS - split numbered cards */
+.bgrid{display:flex;flex-direction:column;gap:1px;background:rgba(190,242,100,.1);border-radius:16px;overflow:hidden;margin-top:16px;}
+.bcard{background:var(--navy);display:flex;align-items:flex-start;gap:14px;padding:18px 16px;}
+.bicon{width:42px;height:42px;min-width:42px;border-radius:10px;overflow:hidden;background:rgba(190,242,100,.08);display:flex;align-items:center;justify-content:center;}
+.bicon img{width:24px;height:24px;object-fit:contain;}
+.btitle{font-size:.88rem;font-weight:700;color:#fff;margin-bottom:3px;}
+.bdesc{font-size:.78rem;color:var(--muted);line-height:1.55;}
 
 /* AWARDS */
-.awards-wrap{display:flex;flex-direction:column;gap:10px;margin:16px 0;}
-.award-img{width:100%;border-radius:12px;border:1px solid rgba(255,255,255,.08);}
-.award-img-ph{width:100%;height:140px;background:#111;border-radius:12px;border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.25);font-size:.85rem;}
+.award-row{display:flex;gap:10px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.award-row::-webkit-scrollbar{display:none;}
+.award-item{flex:0 0 200px;border-radius:12px;overflow:hidden;border:1px solid rgba(190,242,100,.15);}
+.award-item img{width:100%;display:block;}
 
-/* MASTERCLASS INTRO */
-.mc-box{background:linear-gradient(135deg,#0d1a0d,#001a1a);border:1px solid rgba(245,158,11,.2);border-radius:16px;padding:24px 20px;margin-top:16px;text-align:center;}
-.mc-title{font-family:'Poppins',sans-serif;font-size:1.1rem;font-weight:800;color:var(--cyan);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;}
-.mc-text{font-size:.88rem;color:rgba(255,255,255,.7);line-height:1.8;margin-bottom:14px;}
-.mc-text strong{color:#fff;}
-.mc-highlight{background:#000;border:1px solid rgba(245,158,11,.15);border-radius:10px;padding:14px;margin:12px 0;text-align:left;}
-.mc-highlight p{font-size:.88rem;color:rgba(255,255,255,.75);line-height:1.8;}
+/* VISION BLOCK */
+.vision-box{background:var(--navy);border:1px solid rgba(190,242,100,.15);border-radius:20px;padding:24px 20px;margin-top:16px;}
+.vision-kicker{font-size:.95rem;font-weight:800;color:var(--lime);text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px;}
+.vp{font-size:.88rem;color:rgba(255,255,255,.7);line-height:1.8;margin-bottom:12px;}
+.vp strong{color:#fff;}
+.vp .accent{color:var(--lime);}
+.vlist{background:var(--navy2);border-radius:12px;padding:14px;margin:14px 0;}
+.vlist p{font-size:.85rem;color:rgba(255,255,255,.65);line-height:1.85;}
 
-/* WHAT YOU LEARN */
-.learn-list{display:flex;flex-direction:column;gap:10px;margin-top:16px;}
-.learn-item{background:#111;border:1px solid #1e1e1e;border-radius:12px;padding:14px 16px;display:flex;align-items:flex-start;gap:12px;}
-.learn-num{font-size:1.1rem;font-weight:800;color:var(--cyan);min-width:28px;font-family:'Poppins',sans-serif;}
-.learn-text{font-size:.88rem;color:rgba(255,255,255,.8);font-weight:600;line-height:1.5;}
-
-/* PRICING */
-.price-box{background:linear-gradient(135deg,#0d0d0d,#1a0a00);border:2px solid var(--yellow);border-radius:16px;padding:24px 20px;text-align:center;margin:16px 0;position:relative;}
-.price-box::before{content:'SPECIAL OFFER';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--yellow);color:#000;font-size:.68rem;font-weight:800;letter-spacing:.1em;padding:4px 14px;border-radius:100px;}
-.price-row{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:8px;}
-.price-orig{font-size:1.1rem;color:rgba(255,255,255,.4);text-decoration:line-through;}
-.price-now{font-size:2rem;font-weight:900;color:var(--yellow);text-shadow:0 0 20px rgba(255,226,52,.3);}
-.price-free{font-size:2.8rem;font-weight:900;color:var(--cyan);text-shadow:0 0 30px rgba(245,158,11,.4);letter-spacing:-1px;}
-.price-note{font-size:.78rem;color:rgba(255,255,255,.5);margin-top:6px;}
+/* STEPS - what you'll learn */
+.steps-grid{display:flex;flex-direction:column;gap:10px;margin-top:18px;}
+.step-card{background:var(--navy2);border:1px solid rgba(190,242,100,.12);border-radius:14px;padding:16px;display:flex;align-items:flex-start;gap:14px;}
+.step-n{font-size:1.3rem;font-weight:800;color:var(--lime);min-width:36px;}
+.step-text{font-size:.86rem;font-weight:600;color:#fff;line-height:1.5;}
 
 /* MENTOR */
-.mentor-box{text-align:center;}
-.mentor-photo{width:240px;height:240px;border-radius:50%;overflow:hidden;margin:0 auto 16px;border:4px solid var(--cyan);box-shadow:0 0 40px rgba(245,158,11,.25),0 0 0 8px rgba(245,158,11,.08);}
-.mentor-photo img{width:100%;height:100%;object-fit:cover;}
-.mentor-photo-ph{width:100%;height:100%;background:#111;display:flex;align-items:center;justify-content:center;font-size:3rem;}
-.mentor-full-photo{width:100%;border-radius:16px;overflow:hidden;margin-top:16px;border:1px solid rgba(245,158,11,.15);}
-.mentor-full-photo img{width:100%;display:block;}
-.mentor-name{font-size:1.5rem;font-weight:800;color:#fff;margin-bottom:4px;}
-.mentor-name span{color:var(--cyan);}
-.mentor-title{font-size:.82rem;color:rgba(255,255,255,.5);margin-bottom:16px;}
-.mentor-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#222;border-radius:12px;overflow:hidden;margin-bottom:16px;}
-.ms{background:#111;padding:14px 8px;text-align:center;}
-.ms-n{font-size:1.3rem;font-weight:800;color:var(--cyan);line-height:1;}
-.ms-l{font-size:.56rem;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.08em;margin-top:3px;}
-.mentor-bio{font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.8;text-align:left;background:#111;border:1px solid #222;border-radius:12px;padding:16px;}
+.mentor-wrap{text-align:center;}
+.mentor-photo{width:200px;height:200px;border-radius:50%;overflow:hidden;margin:0 auto 16px;border:3px solid var(--lime);box-shadow:0 0 40px rgba(190,242,100,.2);}
+.mentor-photo img{width:100%;height:100%;object-fit:cover;object-position:top;}
+.mentor-photo-ph{width:100%;height:100%;background:var(--navy2);display:flex;align-items:center;justify-content:center;font-size:2.5rem;}
+.mentor-name{font-size:1.4rem;font-weight:800;color:#fff;margin-bottom:3px;}
+.mentor-title{font-size:.8rem;color:var(--muted);margin-bottom:18px;}
+.mentor-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(190,242,100,.1);border-radius:14px;overflow:hidden;margin-bottom:18px;}
+.mbox{background:var(--navy2);padding:14px 6px;text-align:center;}
+.mn{font-size:1.3rem;font-weight:800;color:var(--lime);line-height:1;}
+.ml{font-size:.55rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-top:3px;}
+.mentor-bio{font-size:.86rem;color:rgba(255,255,255,.65);line-height:1.8;text-align:left;background:var(--navy2);border:1px solid rgba(190,242,100,.1);border-radius:14px;padding:18px;}
 .mentor-bio strong{color:#fff;}
+.mentor-photo2{width:100%;border-radius:16px;overflow:hidden;margin-top:16px;border:1px solid rgba(190,242,100,.15);}
+.mentor-photo2 img{width:100%;display:block;}
 
 /* FAQ */
-.faq-wrap{margin-top:16px;}
-.fi{border-bottom:1px solid #1e1e1e;}
-.fq{width:100%;background:none;border:none;text-align:left;padding:15px 0;font-family:'Poppins',sans-serif;font-size:.88rem;font-weight:600;color:rgba(255,255,255,.8);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:color .2s;}
-.fq:hover,.fi.open .fq{color:var(--cyan);}
-.fic{width:22px;height:22px;border:1px solid rgba(245,158,11,.25);color:var(--cyan);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;transition:all .3s;}
-.fi.open .fic{background:var(--cyan);color:#000;transform:rotate(45deg);}
-.fa{max-height:0;overflow:hidden;transition:max-height .4s,padding .3s;font-size:.84rem;color:rgba(255,255,255,.5);line-height:1.75;}
+.fi{border-bottom:1px solid rgba(190,242,100,.08);}
+.fq{width:100%;background:none;border:none;text-align:left;padding:15px 0;font-family:'Sora',sans-serif;font-size:.86rem;font-weight:600;color:rgba(255,255,255,.8);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:color .2s;}
+.fq:hover,.fi.open .fq{color:var(--lime);}
+.fic{width:22px;height:22px;border:1px solid rgba(190,242,100,.25);color:var(--lime);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;transition:all .3s;}
+.fi.open .fic{background:var(--lime);border-color:transparent;color:var(--navy);transform:rotate(45deg);}
+.fa{max-height:0;overflow:hidden;transition:max-height .4s,padding .3s;font-size:.82rem;color:var(--muted);line-height:1.75;}
 .fi.open .fa{max-height:130px;padding-bottom:14px;}
 
-/* COUNTDOWN */
-.countdown-wrap{background:linear-gradient(135deg,#0d0d0d,#000);border:2px solid var(--red);border-radius:16px;padding:24px 20px;text-align:center;margin:16px 0;}
-.cd-title{font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:14px;}
-.cd-timer{display:flex;align-items:center;justify-content:center;gap:8px;}
-.cd-box{background:#1a0000;border:1px solid rgba(255,59,59,.3);border-radius:8px;padding:10px 12px;text-align:center;min-width:56px;}
-.cd-num{font-size:1.8rem;font-weight:900;color:var(--red);line-height:1;font-variant-numeric:tabular-nums;}
-.cd-lbl{font-size:.55rem;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.08em;margin-top:2px;}
-.cd-sep{font-size:1.5rem;font-weight:800;color:var(--red);margin-bottom:12px;}
+/* URGENCY/CTA */
+#cta{background:linear-gradient(170deg,#141b3a 0%,#0b1020 100%);padding:40px 20px;text-align:center;}
+.cta-h{font-size:clamp(1.5rem,5vw,2.1rem);font-weight:800;color:#fff;margin-bottom:8px;}
+.cta-h .lime{color:var(--lime);}
+.cta-p{font-size:.86rem;color:rgba(255,255,255,.5);margin-bottom:20px;line-height:1.7;}
+.cd-wrap{background:var(--navy2);border:1px solid rgba(190,242,100,.15);border-radius:16px;padding:20px;margin-bottom:18px;}
+.cd-lbl{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--lime);margin-bottom:14px;}
+.cd-row{display:flex;align-items:center;justify-content:center;gap:8px;}
+.cdbox{background:var(--navy);border:1px solid rgba(190,242,100,.2);border-radius:8px;padding:10px 12px;min-width:56px;text-align:center;}
+.cdnum{font-size:1.6rem;font-weight:800;color:var(--lime);line-height:1;font-variant-numeric:tabular-nums;}
+.cdlbl{font-size:.55rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-top:2px;}
+.cdsep{font-size:1.3rem;color:rgba(190,242,100,.4);font-weight:700;}
+.cta-wa{display:flex;align-items:center;justify-content:center;gap:10px;background:#25D366;color:#fff;padding:16px;border-radius:14px;border:none;font-family:'Sora',sans-serif;font-size:.95rem;font-weight:700;cursor:pointer;width:100%;margin-bottom:10px;box-shadow:0 8px 28px rgba(37,211,102,.3);animation:shake 2.5s ease-in-out infinite;}
+.cta-wa:hover{background:#1fbd5a;}
+.urgency-note{font-size:.78rem;color:rgba(190,242,100,.6);font-weight:600;margin-top:16px;}
 
-/* URGENCY */
-.urgency-box{background:linear-gradient(135deg,#1a0000,#0d0000);border:1.5px solid var(--red);border-radius:12px;padding:16px 18px;text-align:center;margin:14px 0;}
-.urgency-text{font-size:.9rem;font-weight:700;color:#fff;line-height:1.5;}
-.urgency-text .red{color:var(--red);}
+footer{background:#05080f;border-top:1px solid rgba(190,242,100,.08);padding:22px 20px;text-align:center;}
+.f1{font-size:.74rem;color:rgba(255,255,255,.3);margin-bottom:6px;line-height:1.9;}
+.f2{font-size:.88rem;color:rgba(255,255,255,.55);}
+.f2 strong{color:var(--lime);}
 
-/* FOOTER */
-footer{background:#000;border-top:1px solid #1a1a1a;padding:20px;text-align:center;}
-.footer-copy{font-size:.72rem;color:rgba(255,255,255,.25);line-height:1.9;margin-bottom:8px;}
-.footer-disc{font-size:.68rem;color:rgba(255,255,255,.18);line-height:1.7;}
-
-/* SR */
-.sr{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease;}
+.sr{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}
 .sr.in{opacity:1;transform:translateY(0);}
 </style>
 </head>
@@ -175,207 +157,170 @@ footer{background:#000;border-top:1px solid #1a1a1a;padding:20px;text-align:cent
 
 <!-- HERO -->
 <section id="hero">
-  <div class="free-badge sr">🎁 FREE MASTERCLASS FOR STUDENTS, EMPLOYEES & HOUSEWIFES</div>
-  <h1 class="hero-h1 sr">
-    Discover How To Earn<br/>
-    <span style="color:#f59e0b;">₹1 Lakh Rupees</span><br/>
-    Per Month Using Your<br/>
-    Smartphone &amp; Live A Life of<br/>
-    FREEDOM 🥂
-  </h1>
-  <h2 class="hero-h2 sr">In Just 30 Minutes</h2>
-  <h3 class="hero-h3 sr">Without affecting Your current job, Studies or Family Responsibility</h3>
-  <div class="hero-video sr" style="width:100%;max-width:480px;margin:16px auto 0;aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px solid rgba(245,158,11,.2);">
-    <iframe width="100%" height="100%" src="YOUTUBE_EMBED_URL" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-  </div>
-  <p class="sr" style="font-size:.95rem;font-weight:800;color:var(--yellow);margin-bottom:18px;text-transform:uppercase;letter-spacing:.04em;">⚡ Start Your Earnings In Less Than 7 Days</p>
+  <div class="eyebrow sr"><span class="dot"></span>For Students, Employees &amp; Homemakers</div>
+  <h1 class="hero-h sr">Earn <span class="lime">₹1 Lakh</span> A Month<br/>Using Just Your<br/>Smartphone</h1>
+  <p class="hero-sub sr">In Just 30 Minutes Of Your Time, See How It Works</p>
+  <p class="hero-note sr">Without affecting your current job, studies, or family responsibilities</p>
 
-  <a href="https://wa.me/91MENTOR_NUMBER?text=Hello%20Vishal%20Sir%F0%9F%A4%9D%20I%20Want%20To%20Earn%20Money%20Online%F0%9F%94%A5%0Akindly%20send%20me%20your%20Freedom%20Business%20Masterclass%F0%9F%A5%82%20%0AYou%20can%20also%20call%20me%20to%20understand%20my%20problem%20%26%20goals%20to%20help%20me%20faster%F0%9F%9A%80%0AMy%20Name-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0AMy%20Profession-%0AI%20am%20saving%20your%20number%20now%F0%9F%93%B2" class="cta-btn sr">
-    YES, I Want To Attend This Masterclass for ₹499 <span style="background:#000;color:#22c55e;padding:2px 8px;border-radius:4px;font-weight:900;">FREE🎉</span>
-  </a>
-
-  <div class="hero-imgs sr">
-    <img src="https://img.flexifunnels.com/images/2737/azmti_1080_2.png" alt="Proof 1" style="width:100%;border-radius:12px;border:1px solid rgba(245,158,11,.15);"/>
-    <img src="https://img.flexifunnels.com/images/2737/g4nde_1080_3.png" alt="Proof 2" style="width:100%;border-radius:12px;border:1px solid rgba(245,158,11,.15);"/>
-    <img src="https://img.flexifunnels.com/images/2737/e4nje_1080_4.png" alt="Proof 3" style="width:100%;border-radius:12px;border:1px solid rgba(245,158,11,.15);"/>
+  <div class="video-frame sr">
+    <img src="https://img.flexifunnels.com/images/2737/azmti_1080_2.png" alt="MENTOR_NAME" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);font-size:.8rem;&quot;>📸 Add Hero Image</div>'"/>
   </div>
 
-  <a href="https://wa.me/91MENTOR_NUMBER?text=Hello%20Vishal%20Sir%F0%9F%A4%9D%20I%20Want%20To%20Earn%20Money%20Online%F0%9F%94%A5%0Akindly%20send%20me%20your%20Freedom%20Business%20Masterclass%F0%9F%A5%82%20%0AYou%20can%20also%20call%20me%20to%20understand%20my%20problem%20%26%20goals%20to%20help%20me%20faster%F0%9F%9A%80%0AMy%20Name-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0AMy%20Profession-%0AI%20am%20saving%20your%20number%20now%F0%9F%93%B2" class="cta-btn sr">
-    YES, I Want To Attend This Masterclass for ₹499 <span style="background:#000;color:#22c55e;padding:2px 8px;border-radius:4px;font-weight:900;">FREE🎉</span>
-  </a>
+  <button class="wa-btn sr" onclick="openWA('Hero CTA')">📲 I Want To Know More — Message Me</button>
+
+  <div class="proof-row sr">
+    <div class="proof-item"><img src="https://img.flexifunnels.com/images/2737/azmti_1080_2.png" alt="Result"/></div>
+    <div class="proof-item"><img src="https://img.flexifunnels.com/images/2737/g4nde_1080_3.png" alt="Result"/></div>
+    <div class="proof-item"><img src="https://img.flexifunnels.com/images/2737/e4nje_1080_4.png" alt="Result"/></div>
+  </div>
 </section>
 
-<!-- AFTER MASTERCLASS -->
+<!-- BENEFITS -->
 <section class="sec sec-dark">
-  <h2 class="sec-h sr text-center" style="text-align:center;">AFTER THIS MASTERCLASS,<br/>YOU WILL BE ABLE TO <span class="cyan">👇</span></h2>
-  <div class="benefits-list">
-    <div class="benefit-item sr">
-      <div class="benefit-icon"><img src="https://img.flexifunnels.com/images/14/u1mdy_512_jsWudwBTwc512GdBA3QUUYl512timeismoney.png" style="width:40px;height:40px;object-fit:contain;"/></div>
-      <div class="benefit-text"><strong>Work from Anywhere, Anytime</strong>Gain the freedom to work from anywhere using just your mobile device.</div>
+  <div class="tag sr">What You'll Walk Away With</div>
+  <h2 class="sec-h sr">Here's What Changes <span class="lime">For You</span></h2>
+  <div class="bgrid">
+    <div class="bcard sr">
+      <div class="bicon"><img src="https://img.flexifunnels.com/images/14/u1mdy_512_jsWudwBTwc512GdBA3QUUYl512timeismoney.png" alt=""/></div>
+      <div><div class="btitle">Work From Anywhere, Anytime</div><p class="bdesc">Gain the freedom to work from anywhere using just your mobile device.</p></div>
     </div>
-    <div class="benefit-item sr">
-      <div class="benefit-icon"><img src="https://img.flexifunnels.com/images/14/czoty_512_HRxOLUQXxj512e8dSyqcbHb512settings.png" style="width:40px;height:40px;object-fit:contain;"/></div>
-      <div class="benefit-text"><strong>Earn 1 Lakh Using Social Media</strong>Learn the proven strategies to earn ₹1,00,000 every month using social media.</div>
+    <div class="bcard sr" style="transition-delay:.05s">
+      <div class="bicon"><img src="https://img.flexifunnels.com/images/14/czoty_512_HRxOLUQXxj512e8dSyqcbHb512settings.png" alt=""/></div>
+      <div><div class="btitle">Earn ₹1 Lakh Using Social Media</div><p class="bdesc">Learn proven strategies to earn ₹1,00,000 every month using social media.</p></div>
     </div>
-    <div class="benefit-item sr">
-      <div class="benefit-icon"><img src="https://img.flexifunnels.com/images/14/axmza_512_RayUplzwJv512ZVgZyXRQQD512b2c1.png" style="width:40px;height:40px;object-fit:contain;"/></div>
-      <div class="benefit-text"><strong>Untapped Opportunities</strong>Discover opportunities that can turn your mobile device into a powerful financial tool.</div>
+    <div class="bcard sr" style="transition-delay:.1s">
+      <div class="bicon"><img src="https://img.flexifunnels.com/images/14/axmza_512_RayUplzwJv512ZVgZyXRQQD512b2c1.png" alt=""/></div>
+      <div><div class="btitle">Untapped Opportunities</div><p class="bdesc">Discover ways to turn your mobile device into a real financial tool.</p></div>
     </div>
-    <div class="benefit-item sr">
-      <div class="benefit-icon"><img src="https://img.flexifunnels.com/images/14/i5mjm_512_oZSTdasYiU5129JH2Tvx3OG512currencysymbol.png" style="width:40px;height:40px;object-fit:contain;"/></div>
-      <div class="benefit-text"><strong>New Income Source Fast</strong>Build a new income source without owning any extra skills or putting additional time into trial & error.</div>
+    <div class="bcard sr" style="transition-delay:.15s">
+      <div class="bicon"><img src="https://img.flexifunnels.com/images/14/i5mjm_512_oZSTdasYiU5129JH2Tvx3OG512currencysymbol.png" alt=""/></div>
+      <div><div class="btitle">A New Income Source, Fast</div><p class="bdesc">Build it without needing extra skills or months of trial and error.</p></div>
     </div>
-    <div class="benefit-item sr">
-      <div class="benefit-icon"><img src="https://img.flexifunnels.com/images/14/y0mtc_512_WRVlD2AA4w512twJeUBCWzi512targetaudience.png" style="width:40px;height:40px;object-fit:contain;"/></div>
-      <div class="benefit-text"><strong>Make 1 Lakh/Month in Free Time</strong>Start utilizing your free time in a productive way to make an additional ₹1 lakh per month.</div>
+    <div class="bcard sr" style="transition-delay:.2s">
+      <div class="bicon"><img src="https://img.flexifunnels.com/images/14/y0mtc_512_WRVlD2AA4w512twJeUBCWzi512targetaudience.png" alt=""/></div>
+      <div><div class="btitle">₹1 Lakh/Month In Your Free Time</div><p class="bdesc">Turn your spare hours into a productive, income-generating routine.</p></div>
     </div>
   </div>
 </section>
 
 <!-- AWARDS -->
-<section class="sec" style="text-align:center;">
-  <h2 class="sec-h sr">AWARDED BY THE <span class="cyan">BEST</span></h2>
-  <div class="awards-wrap sr">
-    <img src="https://img.flexifunnels.com/images/2737/cxmdc_1080_Untitleddesign2.png" alt="Award" class="award-img"/>
-    <img src="https://img.flexifunnels.com/images/2737/k0ndg_1080_10.jpg" alt="Award" class="award-img"/>
-    
+<section class="sec">
+  <div class="tag sr">Recognised By</div>
+  <h2 class="sec-h sr">Backed By The <span class="lime">Best</span></h2>
+  <div class="award-row sr">
+    <div class="award-item"><img src="https://img.flexifunnels.com/images/2737/cxmdc_1080_Untitleddesign2.png" alt="Award"/></div>
+    <div class="award-item"><img src="https://img.flexifunnels.com/images/2737/k0ndg_1080_10.jpg" alt="Award"/></div>
   </div>
-  <a href="https://wa.me/91MENTOR_NUMBER?text=Hello%20Vishal%20Sir%F0%9F%A4%9D%20I%20Want%20To%20Earn%20Money%20Online%F0%9F%94%A5%0Akindly%20send%20me%20your%20Freedom%20Business%20Masterclass%F0%9F%A5%82%20%0AYou%20can%20also%20call%20me%20to%20understand%20my%20problem%20%26%20goals%20to%20help%20me%20faster%F0%9F%9A%80%0AMy%20Name-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0AMy%20Profession-%0AI%20am%20saving%20your%20number%20now%F0%9F%93%B2" class="cta-btn sr">
-    YES, I Want To Attend This Masterclass for ₹499 <span style="background:#000;color:#22c55e;padding:2px 8px;border-radius:4px;font-weight:900;">FREE🎉</span>
-  </a>
+  <button class="wa-btn sr" onclick="openWA('Awards CTA')" style="margin-top:18px;">📲 Tell Me More — Message Me</button>
 </section>
 
-<!-- INTRO -->
+<!-- VISION -->
 <section class="sec sec-dark">
-  <h2 class="sec-h sr" style="text-align:center;">Ready To <span class="yellow">Make Money</span> Online?</h2>
-  <div class="mc-box sr">
-    <div class="mc-title">🔥 FREEDOM BUSINESS MASTERCLASS</div>
-    <p class="mc-text">Have you ever imagined <strong>doubling, or even tripling your income</strong> in less than 30 days <strong>WITHOUT</strong> any risk or high capital investment?</p>
-    <p class="mc-text">Picture a world where <strong style="color:var(--cyan);">you make ₹1,00,000/month on autopilot.</strong> That's not just a dream; it's a transformation waiting to happen.</p>
-    <div class="mc-highlight">
+  <div class="tag sr">Ready To Make Money Online?</div>
+  <div class="vision-box sr">
+    <div class="vision-kicker">🔥 The Freedom Blueprint</div>
+    <p class="vp">Have you ever imagined <strong>doubling, or even tripling your income</strong> in less than 30 days — without any risk or high capital investment?</p>
+    <p class="vp">Picture a world where <span class="accent">you make ₹1,00,000/month</span> on autopilot. That's not just a dream; it's a transformation waiting to happen.</p>
+    <div class="vlist">
       <p>🤩 Waking up knowing your bank balance is growing even as you relax.<br/>🤩 Planning weekend getaways without a second thought about expenses.<br/>🤩 Helping out family, treating friends, and living life on your own terms.</p>
     </div>
-    <p class="mc-text"><strong>All this... without the constant worry of bills or loans.</strong><br/>That's the life of freedom and luxury, and it's within your reach.</p>
-    <p class="mc-text" style="color:var(--yellow);font-weight:700;">But here's the thing: opportunities like this don't knock twice. 🚨</p>
+    <p class="vp"><strong>All this — without the constant worry of bills or loans.</strong><br/>That's the life of freedom, and it's within your reach.</p>
   </div>
-  <a href="https://wa.me/91MENTOR_NUMBER?text=Hello%20Vishal%20Sir%F0%9F%A4%9D%20I%20Want%20To%20Earn%20Money%20Online%F0%9F%94%A5%0Akindly%20send%20me%20your%20Freedom%20Business%20Masterclass%F0%9F%A5%82%20%0AYou%20can%20also%20call%20me%20to%20understand%20my%20problem%20%26%20goals%20to%20help%20me%20faster%F0%9F%9A%80%0AMy%20Name-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0AMy%20Profession-%0AI%20am%20saving%20your%20number%20now%F0%9F%93%B2" class="cta-btn yellow sr" style="margin-top:20px;">
-    YES, I Want To Attend This Masterclass for ₹499 FREE🎉
-  </a>
+  <button class="wa-btn sr" onclick="openWA('Vision CTA')" style="margin-top:18px;">📲 I'm Ready — Message Me Now</button>
 </section>
 
 <!-- WHAT YOU LEARN -->
 <section class="sec">
-  <h2 class="sec-h sr" style="text-align:center;">What You Will Learn In <span class="cyan">MASTERCLASS?</span></h2>
-  <div class="learn-list">
-    <div class="learn-item sr"><div class="learn-num">#1</div><div class="learn-text">Top 3 reasons — Why you MUST have Multiple Sources of Income</div></div>
-    <div class="learn-item sr"><div class="learn-num">#2</div><div class="learn-text">3 Things You Need To Make Money Online</div></div>
-    <div class="learn-item sr"><div class="learn-num">#3</div><div class="learn-text">3 Common mistakes others are making that YOU can avoid</div></div>
-    <div class="learn-item sr"><div class="learn-num">#4</div><div class="learn-text">3 Myths people have that prevents them from becoming a Digital Entrepreneur</div></div>
-    <div class="learn-item sr"><div class="learn-num">#5</div><div class="learn-text">Golden Opportunity to Earn ₹1 Lakh+ within 90 Days with our Proven Ecosystem</div></div>
+  <div class="tag sr">Inside This Program</div>
+  <h2 class="sec-h sr">What You'll <span class="lime">Actually Learn</span></h2>
+  <div class="steps-grid">
+    <div class="step-card sr"><div class="step-n">01</div><div class="step-text">Top 3 reasons why you MUST have multiple sources of income</div></div>
+    <div class="step-card sr" style="transition-delay:.05s"><div class="step-n">02</div><div class="step-text">3 things you actually need to make money online</div></div>
+    <div class="step-card sr" style="transition-delay:.1s"><div class="step-n">03</div><div class="step-text">3 common mistakes others make that you can completely avoid</div></div>
+    <div class="step-card sr" style="transition-delay:.15s"><div class="step-n">04</div><div class="step-text">3 myths that stop people from becoming digital entrepreneurs</div></div>
+    <div class="step-card sr" style="transition-delay:.2s"><div class="step-n">05</div><div class="step-text">A real opportunity to earn ₹1 Lakh+ within 90 days using a proven ecosystem</div></div>
   </div>
-  <div class="price-box sr">
-    <div class="price-row">
-      <div>
-        <div class="price-orig">Total Value: ₹5,000</div>
-        <div class="price-orig" style="font-size:.9rem;">Normal Price: ₹499</div>
-      </div>
-      <div>
-        <div style="font-size:.8rem;color:rgba(255,255,255,.5);margin-bottom:2px;">Special Offer:</div>
-        <div class="price-free">FREE</div>
-      </div>
-    </div>
-    <div class="price-note">🎁 Limited time offer — Don't miss this opportunity!</div>
-  </div>
-  <a href="https://wa.me/91MENTOR_NUMBER?text=Hello%20Vishal%20Sir%F0%9F%A4%9D%20I%20Want%20To%20Earn%20Money%20Online%F0%9F%94%A5%0Akindly%20send%20me%20your%20Freedom%20Business%20Masterclass%F0%9F%A5%82%20%0AYou%20can%20also%20call%20me%20to%20understand%20my%20problem%20%26%20goals%20to%20help%20me%20faster%F0%9F%9A%80%0AMy%20Name-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0AMy%20Profession-%0AI%20am%20saving%20your%20number%20now%F0%9F%93%B2" class="cta-btn sr">
-    YES, I Want To Attend This Masterclass for ₹499 <span style="background:#000;color:#22c55e;padding:2px 8px;border-radius:4px;font-weight:900;">FREE🎉</span>
-  </a>
+  <button class="wa-btn sr" onclick="openWA('Learn CTA')" style="margin-top:20px;">📲 I Want In — Message Me</button>
 </section>
 
 <!-- MENTOR -->
 <section class="sec sec-dark">
-  <h2 class="sec-h sr" style="text-align:center;">MEET YOUR <span class="cyan">MENTOR</span></h2>
-  <div class="mentor-box sr">
+  <div class="tag sr">Meet Your Mentor</div>
+  <div class="mentor-wrap sr">
     <div class="mentor-photo">
-      <img src="https://img.flexifunnels.com/images/2737/kzmjm_960_a2oda960photo2022082323.26.48.jpeg" alt="Vishal Khaitan" style="width:100%;height:100%;object-fit:cover;object-position:top;" onerror="this.parentElement.innerHTML='<div class=mentor-photo-ph>👨‍💼</div>'"/>
+      <img src="https://img.flexifunnels.com/images/2737/kzmjm_960_a2oda960photo2022082323.26.48.jpeg" alt="MENTOR_NAME" onerror="this.parentElement.innerHTML='<div class=mentor-photo-ph>👨‍💼</div>'"/>
     </div>
-    <div class="mentor-name">Hi, I'm <span>Vishal Khaitan</span></div>
-    <div class="mentor-title">Business Success Coach • Founder & CEO</div>
+    <div class="mentor-name">MENTOR_NAME</div>
+    <div class="mentor-title">Business Success Coach • Founder &amp; CEO</div>
     <div class="mentor-stats">
-      <div class="ms"><div class="ms-n">2000+</div><div class="ms-l">Students Trained</div></div>
-      <div class="ms"><div class="ms-n">₹3L+</div><div class="ms-l">Revenue/Month</div></div>
-      <div class="ms"><div class="ms-n">2+</div><div class="ms-l">Years Experience</div></div>
+      <div class="mbox"><div class="mn">2000+</div><div class="ml">Students Trained</div></div>
+      <div class="mbox"><div class="mn">₹3L+</div><div class="ml">Revenue/Month</div></div>
+      <div class="mbox"><div class="mn">2+</div><div class="ml">Years In</div></div>
     </div>
     <div class="mentor-bio">
-      <p><strong>Vishal Khaitan</strong> is a successful digital entrepreneur who generates revenue of over ₹3 Lacs per month. He has helped <strong>452 newbies</strong> to earn over One Lakh rupees per month in last 2 years.</p><br/>
-      <p>He has helped hundreds of youngsters to <strong>escape the rat race of 9-to-5</strong> to live a life of freedom and become financially independent.</p><br/>
-      <p>With years of experience, Vishal Khaitan has designed a one-of-its-kind <strong>40-minute Freedom Business Masterclass</strong> which can help you launch your online business within 7 days even if you don't have any prior experience.</p>
+      <p><strong>MENTOR_NAME</strong> is a successful digital entrepreneur generating over ₹3 Lacs per month. He's helped <strong>452 newbies</strong> earn over one lakh rupees a month in the last 2 years.</p><br/>
+      <p>He's helped hundreds of youngsters <strong>escape the rat race of 9-to-5</strong> and build genuine financial independence.</p><br/>
+      <p>Through years of experience, MENTOR_NAME built a <strong>step-by-step program</strong> that helps you launch your own online business within 7 days — even with zero prior experience.</p>
     </div>
-    <div class="mentor-full-photo">
-      <img src="https://img.flexifunnels.com/images/2737/eznji_6240_IMG3612min.jpeg" alt="Vishal Khaitan" onerror="this.style.display='none'"/>
+    <div class="mentor-photo2">
+      <img src="https://img.flexifunnels.com/images/2737/eznji_6240_IMG3612min.jpeg" alt="MENTOR_NAME" onerror="this.style.display='none'"/>
     </div>
   </div>
 </section>
+
+<!-- FAQ -->
 <section class="sec">
-  <h2 class="sec-h sr" style="text-align:center;">Frequently Asked <span class="cyan">Questions</span></h2>
-  <div class="faq-wrap">
-    <div class="fi sr"><button class="fq" onclick="tFaq(this)">What will I learn in this masterclass? <span class="fic">+</span></button><div class="fa">You'll learn a secret method to earn online without having any extra talent. We'll cover 3 proven methods to reach ₹1,00,000/month using your smartphone.</div></div>
-    <div class="fi sr"><button class="fq" onclick="tFaq(this)">Will I be able to achieve results with your methods? <span class="fic">+</span></button><div class="fa">Yes, you will be able to achieve it if you implement it. We have hundreds of success stories to back this up.</div></div>
-    <div class="fi sr"><button class="fq" onclick="tFaq(this)">I have a full time job, can I do it? <span class="fic">+</span></button><div class="fa">Absolutely! We have so many success stories of people who were doing a job, started this business part-time and now living a great life.</div></div>
-    <div class="fi sr"><button class="fq" onclick="tFaq(this)">Why are you teaching this for FREE? <span class="fic">+</span></button><div class="fa">Because it is our mission to help 1,00,000 Indians live a life of freedom. You'll get the First Mover Advantage when you attend this masterclass.</div></div>
-  </div>
+  <div class="tag sr">Common Questions</div>
+  <h2 class="sec-h sr">Quick <span class="lime">Answers</span></h2>
+  <div class="fi sr"><button class="fq" onclick="tFaq(this)">What exactly will I learn? <span class="fic">+</span></button><div class="fa">A practical method to earn online without needing any extra talent — 3 proven methods to reach ₹1,00,000/month using your smartphone.</div></div>
+  <div class="fi sr"><button class="fq" onclick="tFaq(this)">Will I actually be able to get results? <span class="fic">+</span></button><div class="fa">Yes — if you implement what's taught. There are hundreds of success stories backing this up.</div></div>
+  <div class="fi sr"><button class="fq" onclick="tFaq(this)">I have a full-time job, can I still do this? <span class="fic">+</span></button><div class="fa">Absolutely. Many students started part-time alongside their jobs and built a great second income.</div></div>
+  <div class="fi sr"><button class="fq" onclick="tFaq(this)">Why are you sharing this so openly? <span class="fic">+</span></button><div class="fa">The mission is to help as many people as possible build financial freedom — and you'll get a first-mover advantage by acting early.</div></div>
 </section>
 
-<!-- COUNTDOWN + CTA -->
-<section class="sec sec-dark" style="text-align:center;">
-  <h2 class="sec-h sr" style="color:var(--yellow);">⚠️ HURRY! <span class="cyan">LIMITED SEATS</span> AVAILABLE!</h2>
-  <p class="sr" style="font-size:.88rem;color:rgba(255,255,255,.55);margin-bottom:16px;">As the content is TOP SECRET & Exclusive — Only <strong style="color:var(--red);">100 Seats</strong> are available!</p>
+<!-- CTA / URGENCY -->
+<section id="cta">
+  <h2 class="cta-h sr">⚡ <span class="lime">Limited Spots</span> Available</h2>
+  <p class="cta-p sr">As this content is exclusive, only a limited number of people can join at a time.</p>
 
-  <div class="countdown-wrap sr">
-    <div class="cd-title">🔥 Offer Expires In:</div>
-    <div class="cd-timer">
-      <div class="cd-box"><div class="cd-num" id="cd-d">00</div><div class="cd-lbl">Days</div></div>
-      <div class="cd-sep">:</div>
-      <div class="cd-box"><div class="cd-num" id="cd-h">00</div><div class="cd-lbl">Hrs</div></div>
-      <div class="cd-sep">:</div>
-      <div class="cd-box"><div class="cd-num" id="cd-m">00</div><div class="cd-lbl">Mins</div></div>
-      <div class="cd-sep">:</div>
-      <div class="cd-box"><div class="cd-num" id="cd-s">00</div><div class="cd-lbl">Secs</div></div>
+  <div class="cd-wrap sr">
+    <div class="cd-lbl">🔥 Window Closes In</div>
+    <div class="cd-row">
+      <div class="cdbox"><div class="cdnum" id="cd-d">00</div><div class="cdlbl">Days</div></div>
+      <div class="cdsep">:</div>
+      <div class="cdbox"><div class="cdnum" id="cd-h">00</div><div class="cdlbl">Hrs</div></div>
+      <div class="cdsep">:</div>
+      <div class="cdbox"><div class="cdnum" id="cd-m">00</div><div class="cdlbl">Mins</div></div>
+      <div class="cdsep">:</div>
+      <div class="cdbox"><div class="cdnum" id="cd-s">00</div><div class="cdlbl">Secs</div></div>
     </div>
   </div>
 
-  <div class="price-box sr">
-    <div style="font-size:1.4rem;font-weight:900;color:rgba(255,255,255,.4);text-decoration:line-through;margin-bottom:4px;">₹499</div>
-    <div class="price-free">FREE</div>
-  </div>
-
-  <a href="https://wa.me/91MENTOR_NUMBER?text=Hello%20Vishal%20Sir%F0%9F%A4%9D%20I%20Want%20To%20Earn%20Money%20Online%F0%9F%94%A5%0Akindly%20send%20me%20your%20Freedom%20Business%20Masterclass%F0%9F%A5%82%20%0AYou%20can%20also%20call%20me%20to%20understand%20my%20problem%20%26%20goals%20to%20help%20me%20faster%F0%9F%9A%80%0AMy%20Name-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0AMy%20Profession-%0AI%20am%20saving%20your%20number%20now%F0%9F%93%B2" class="cta-btn red sr">
-    🚨 REGISTER NOW — Before Seats Fill Up!
-  </a>
-  <p class="sr" style="font-size:.82rem;color:rgba(255,59,59,.7);margin-top:-12px;font-weight:700;">Or Regret Later</p>
-
-  <div class="urgency-box sr">
-    <div class="urgency-text">⚠️ <span class="red">NOTE:</span> As The Content We'll Be Sharing Is Top Secret And Exclusive,<br/>So Only <span class="red">100 Seats Are Available!</span></div>
-  </div>
+  <button class="cta-wa sr" onclick="openWA('Final CTA')">🚨 Message Me Before Spots Fill Up</button>
+  <p class="urgency-note sr">Only a limited number of people are taken on at a time.</p>
 </section>
 
-<!-- FOOTER -->
 <footer>
-
-  <div style="margin-top:14px;padding-top:14px;border-top:1px solid #1a1a1a;">
-    <div style="font-size:.75rem;color:rgba(255,255,255,.25);margin-bottom:4px;">🌟 Empower with skills · 🌈 Support every vision · 🚀 Dreams to direction</div>
-    <div style="font-size:.88rem;color:rgba(255,255,255,.5);margin-bottom:4px;">❤️ Powered by <strong style="color:#f59e0b;">Osama · AdDestini</strong></div>
-  </div>
+  <div class="f1">🌟 Empower with skills · 🌈 Support every vision · 🚀 Dreams to direction</div>
+  <div class="f2">❤️ Powered by <strong>Osama · AdDestini</strong></div>
 </footer>
 
 <script>
-// Countdown timer - 2 days from now
+const WA_NUMBER='91MENTOR_NUMBER';
+function openWA(source){
+  if(typeof fbq!=='undefined')fbq('track','Lead');
+  const msg=`Hello Sir🤝 I Want To Earn Money Online🔥\nKindly send me more details about your program🥂\nYou can also call me to understand my problem & goals to help me faster🚀\nMy Name-                        \nMy Profession-\nI am saving your number now📲`;
+  window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank');
+}
+
+// Countdown - 2 days from now
 function startTimer(){
-  const end = new Date();
+  const end=new Date();
   end.setDate(end.getDate()+2);
   end.setHours(23,59,59,0);
   function update(){
-    const now=new Date(), diff=end-now;
-    if(diff<=0){document.getElementById('cd-d').textContent='00';document.getElementById('cd-h').textContent='00';document.getElementById('cd-m').textContent='00';document.getElementById('cd-s').textContent='00';return;}
+    const now=new Date(),diff=end-now;
+    if(diff<=0){['cd-d','cd-h','cd-m','cd-s'].forEach(id=>document.getElementById(id).textContent='00');return;}
     const d=Math.floor(diff/86400000),h=Math.floor((diff%86400000)/3600000),m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);
     document.getElementById('cd-d').textContent=String(d).padStart(2,'0');
     document.getElementById('cd-h').textContent=String(h).padStart(2,'0');
@@ -387,10 +332,8 @@ function startTimer(){
 }
 startTimer();
 
-// FAQ
 function tFaq(btn){const item=btn.closest('.fi'),isOpen=item.classList.contains('open');document.querySelectorAll('.fi.open').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open');}
 
-// Scroll reveal
 const obs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});},{threshold:.1});
 document.querySelectorAll('.sr').forEach(el=>obs.observe(el));
 
