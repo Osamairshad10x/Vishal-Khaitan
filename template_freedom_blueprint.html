@@ -53,8 +53,8 @@ img{display:block;max-width:100%;}
 .hero-sub{font-size:.92rem;color:rgba(255,255,255,.6);margin-bottom:6px;font-weight:500;}
 .hero-note{font-size:.82rem;color:rgba(255,255,255,.4);margin-bottom:20px;}
 
-.video-frame{width:100%;max-width:460px;margin:0 auto 22px;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid rgba(190,242,100,.15);background:#000;}
-.video-frame iframe{width:100%;height:100%;border:none;}
+.hero-img-frame{width:100%;max-width:420px;margin:0 auto 22px;border-radius:18px;overflow:hidden;border:1px solid rgba(190,242,100,.15);}
+.hero-img-frame img{width:100%;display:block;}
 
 @keyframes shake{0%,100%{transform:translateX(0)}15%{transform:translateX(-5px)}30%{transform:translateX(5px)}45%{transform:translateX(-3px)}60%{transform:translateX(3px)}75%{transform:translateX(-2px)}90%{transform:translateX(2px)}}
 
@@ -87,6 +87,8 @@ img{display:block;max-width:100%;}
 .award-row::-webkit-scrollbar{display:none;}
 .award-item{flex:0 0 200px;border-radius:12px;overflow:hidden;border:1px solid rgba(190,242,100,.15);}
 .award-item img{width:100%;display:block;}
+.award-single{max-width:340px;margin:0 auto;border-radius:14px;overflow:hidden;border:1px solid rgba(190,242,100,.15);}
+.award-single img{width:100%;display:block;}
 
 /* VISION BLOCK */
 .vision-box{background:var(--navy);border:1px solid rgba(190,242,100,.15);border-radius:20px;padding:24px 20px;margin-top:16px;}
@@ -105,7 +107,7 @@ img{display:block;max-width:100%;}
 
 /* MENTOR */
 .mentor-wrap{text-align:center;}
-.mentor-photo{width:200px;height:200px;border-radius:50%;overflow:hidden;margin:0 auto 16px;border:3px solid var(--lime);box-shadow:0 0 40px rgba(190,242,100,.2);}
+.mentor-photo{width:260px;height:260px;border-radius:50%;overflow:hidden;margin:0 auto 16px;border:4px solid var(--lime);box-shadow:0 0 50px rgba(190,242,100,.25);}
 .mentor-photo img{width:100%;height:100%;object-fit:cover;object-position:top;}
 .mentor-photo-ph{width:100%;height:100%;background:var(--navy2);display:flex;align-items:center;justify-content:center;font-size:2.5rem;}
 .mentor-name{font-size:1.4rem;font-weight:800;color:#fff;margin-bottom:3px;}
@@ -162,8 +164,8 @@ footer{background:#05080f;border-top:1px solid rgba(190,242,100,.08);padding:22p
   <p class="hero-sub sr">In Just 30 Minutes Of Your Time, See How It Works</p>
   <p class="hero-note sr">Without affecting your current job, studies, or family responsibilities</p>
 
-  <div class="video-frame sr">
-    <img src="https://i.ibb.co/Y7sN9hsS/IMG-5486.jpg" alt="MENTOR_NAME" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);font-size:.8rem;&quot;>📸 Add Hero Image</div>'"/>
+  <div class="hero-img-frame sr">
+    <img src="https://img.flexifunnels.com/images/2737/azmti_1080_2.png" alt="MENTOR_NAME" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);font-size:.8rem;&quot;>📸 Add Hero Image</div>'"/>
   </div>
 
   <button class="wa-btn sr" onclick="openWA('Hero CTA')">📲 I Want To Know More — Message Me</button>
@@ -207,9 +209,8 @@ footer{background:#05080f;border-top:1px solid rgba(190,242,100,.08);padding:22p
 <section class="sec">
   <div class="tag sr">Recognised By</div>
   <h2 class="sec-h sr">Backed By The <span class="lime">Best</span></h2>
-  <div class="award-row sr">
-    <div class="award-item"><img src="https://img.flexifunnels.com/images/2737/cxmdc_1080_Untitleddesign2.png" alt="Award"/></div>
-    <div class="award-item"><img src="https://img.flexifunnels.com/images/2737/k0ndg_1080_10.jpg" alt="Award"/></div>
+  <div class="award-single sr">
+    <img src="https://img.flexifunnels.com/images/2737/cxmdc_1080_Untitleddesign2.png" alt="Award"/>
   </div>
   <button class="wa-btn sr" onclick="openWA('Awards CTA')" style="margin-top:18px;">📲 Tell Me More — Message Me</button>
 </section>
