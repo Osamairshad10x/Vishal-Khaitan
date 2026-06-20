@@ -303,11 +303,15 @@ footer{background:#05080f;border-top:1px solid rgba(190,242,100,.08);padding:22p
 </footer>
 
 <script>
-const WA_NUMBER='91MENTOR_NUMBER';
+const WA_NUMBER='919147579147';
 function openWA(source){
-  if(typeof fbq!=='undefined')fbq('track','Lead');
-  const msg=`Hello Sir🤝 I Want To Earn Money Online🔥\nKindly send me more details about your program🥂\nMy Name-                        \nMy Profession-   ;
-  window.open(`https://wa.me/${9147579147}?text=${encodeURIComponent(msg)}`,'_blank');
+  if(typeof fbq!=='undefined')fbq('track','Lead',{content_name:source});
+  const msg=`Hello Sir🤝 I Want To Earn Money Online🔥
+Kindly send me more details about your program🥂
+My Name-                        
+My Age-
+My Profession-`;
+  window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank');
 }
 
 // Countdown - 2 days from now
